@@ -32,7 +32,7 @@ class Comments
     private $date;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Article", inversedBy="comments")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Article")
      * @ORM\JoinColumn(nullable=false)
      */
     private $article;

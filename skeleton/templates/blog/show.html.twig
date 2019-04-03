@@ -41,6 +41,29 @@
 
         </section>
 
+    {{ form_start(formComment) }}
+
+        <div class="div_author">
+            <label for""> auteur </label>
+            {{ form_widget(formComment.author) }}
+        </div>
+
+    <div class="div_comment">
+        <label for""> commentaire </label>
+        {{ form_widget(formComment.content) }}
+    </div>
+
+    <div >
+        <label for""> id </label>
+        {{ form_widget(formComment.article) }}
+    </div>
+
+
+    <button type="submit" id="bt_comment"> publier </button>
+
+    {{ form_end(formComment) }}
+
+
     <a href="{{ path('home')}}"> voir tout les articles </a>
 
 

@@ -9,6 +9,7 @@ use App\Entity\Comments;
 use App\Repository\ArticleRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
@@ -83,19 +84,60 @@ class BlogController extends AbstractController
     }
 
 
-
     /**
      * @Route("/blog/show/{id}", name="show")
      */
-    public function show(ArticleRepository $repo,$id) {
+    public function show(ArticleRepository $repo,$id,Request $request, ObjectManager $manager) {
 
         //$repo = $this->getDoctrine()->getRepository(Article::class);
 
         $article = $repo->find($id);
 
+        $comment = new Comments();
+
+        $form = $this->createFormBuilder($comment)
+            ->add('author', TextType::class, [
+                'attr' => [
+                    'placeholder' => "auteur",
+                    'class' => "inp_author"
+                ]
+            ])
+            ->add('content', TextareaType::class, [
+                'attr' => [
+                    'placeholder' => "contenu du commentaire",
+                    'class' => "inp_commentaire"
+                ]
+            ])
+            ->add('article', NumberType::class, [
+                'attr'=>[
+                    'value'=>$id
+                ]
+
+            ])
+            ->getForm();
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+
+
+            $comment->setDate(new \DateTime());
+
+
+            $manager->persist($comment);
+            $manager->flush();
+
+            return $this->redirectToRoute('blog/show.html.twig', [
+                'id' => $comment->getId()
+            ]);
+        }
+
         return $this->render('blog/show.html.twig',[
-            'article'=> $article, 'id'=> $id
+            'article'=> $article, 'id'=> $id,'formComment' => $form->createView(),
+            'editMode' => $comment->getId() !== null
         ]);
+
+
         }
 
 
