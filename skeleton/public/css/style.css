@@ -1,0 +1,17 @@
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#form_title {
+    width: 100%;
+    text-align: center;
+}
+#form_content {
+    width: 100%;
+    text-align: center;
+}
+
+.div_titre> label {
+margin-left: 50%}

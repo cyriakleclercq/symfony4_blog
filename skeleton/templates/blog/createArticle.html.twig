@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1> création d'un article</h1>
+
+
+    {{ form_start(formArticle) }}
+
+    <div class="div_titre">
+        <label for""> Titre </label>
+        {{ form_widget(formArticle.title) }}
+
+        <div class="div_titre">
+            <label for""> Content </label>
+            {{ form_widget(formArticle.content) }}
+        </div>
+
+    </div>
+
+    <button type="submit" id="bt_create">
+        {% if editMode  %}
+
+            Modifier
+
+        {% else %}
+
+        Créer un article </button>
+
+    {% endif
+        %}
+
+    {{ form_end(formArticle) }}
+
+
+{% endblock %}

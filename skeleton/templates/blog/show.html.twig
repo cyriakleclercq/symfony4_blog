@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <header>
+
+        <h1> Votre article </h1>
+
+    </header>
+
+
+        <article>
+
+            <h2> {{ article.title }}</h2>
+
+            <div class="article"> {{ article.content }} </div>
+
+            <div class="article_date"> {{ article.date|date('d/m/y') }} à {{ article.date|date('h:i') }}</div>
+
+            <a href="{{ path('home')}}"> voir tout les articles </a>
+
+        </article>
+
+
+
+{%  endblock %}
