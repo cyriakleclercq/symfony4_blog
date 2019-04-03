@@ -5,6 +5,7 @@ namespace App\Controller;
 
 
 use App\Entity\Article;
+use App\Entity\Comments;
 use App\Repository\ArticleRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -93,7 +94,7 @@ class BlogController extends AbstractController
         $article = $repo->find($id);
 
         return $this->render('blog/show.html.twig',[
-            'article'=> $article
+            'article'=> $article, 'id'=> $id
         ]);
         }
 

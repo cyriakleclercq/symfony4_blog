@@ -17,9 +17,32 @@
 
             <div class="article_date"> {{ article.date|date('d/m/y') }} à {{ article.date|date('h:i') }}</div>
 
-            <a href="{{ path('home')}}"> voir tout les articles </a>
+
 
         </article>
+
+        <section id="commentaire">
+
+            {%  for comment in article.comments %}
+            <div class="comment">
+
+                <div class="comment_author"> {{ comment.author }} </div>
+
+                <div class="comment_content"> {{ comment.content}} </div>
+
+                <div class="comment_date"> {{ comment.date|date('d/m/y') }} à {{ comment.date|date('h:i') }} </div>
+
+
+
+
+            </div>
+
+            {% endfor %}
+
+        </section>
+
+    <a href="{{ path('home')}}"> voir tout les articles </a>
+
 
 
 
