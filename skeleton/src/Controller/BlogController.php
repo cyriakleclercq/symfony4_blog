@@ -6,6 +6,7 @@ namespace App\Controller;
 
 use App\Entity\Article;
 use App\Entity\Comments;
+use App\Entity\User;
 use App\Repository\ArticleRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -36,7 +37,6 @@ class BlogController extends AbstractController
 
     /**
      * @Route("/blog/new", name="create")
-     * @Route("/blog/{id}/edit", name="edit")
      */
     public function form(Article $article = null, Request $request,ObjectManager $manager) {
 
@@ -94,8 +94,13 @@ class BlogController extends AbstractController
 
         $article = $repo->find($id);
 
-        $user = $this->getUser();
-        $user->getId();
+        $connection = new User();
+
+
+            $user = $this->getUser();
+            $user->getId();
+
+
 
         $comment = new Comments();
 

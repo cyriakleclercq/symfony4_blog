@@ -3,39 +3,74 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Boom{% endblock %}</title>
-        {% block stylesheets %} <link rel="stylesheet" href="{{ asset('css/style.css') }}">{% endblock %}
+        {% block stylesheets %} <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+            <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">{% endblock %}
     </head>
     <body>
     <header>
-        <div id="nav">
 
-            <a href="{{ path('home') }}"> home </a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="nav">
+            <h2 class="navbar-brand">Mon blog</h2>
 
-            {% if is_granted('ROLE_ADMIN') %}
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
 
-            <a href="{{ path('create') }}"> create</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ path('home') }}">Home <span class="sr-only">(current)</span></a>
+                    </li>
 
-            {% endif %}
+                    {% if is_granted('ROLE_ADMIN') %}
 
 
-            <a href="{{ path('inscription') }}"> inscription</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('create') }}">Create <span class="sr-only">(current)</span></a>
+                        </li>
 
-            {% if not app.user %}
-            <a href="{{ path('login') }}"> connexion </a>
-            {% else %}
-            <a href="{{ path('logout') }}"> déconnexion </a>
-            {% endif %}
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('user_index') }}">All users <span class="sr-only">(current)</span></a>
+                        </li>
 
-        </div>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('article_index') }}">All articles <span class="sr-only">(current)</span></a>
+                        </li>
+
+                    {% endif %}
+
+                    {% if not app.user %}
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('inscription') }}"> Registration <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('login') }}"> Login <span class="sr-only">(current)</span></a>
+                        </li>
+
+
+                    {% else %}
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('logout') }}"> Logout <span class="sr-only">(current)</span></a>
+                        </li>
+
+
+                    {% endif %}
+
+                </ul>
+
+            </div>
+        </nav>
+
+
     </header>
 
-        {% block body %}
+        {% block body %}{% endblock %}
 
-
-
-        {% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
 </html>
+
+
+
 
 

@@ -2,58 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e6a8a3d-642a-40ab-b8b5-5f834892248d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/skeleton/config/packages/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/config/packages/security.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/config/packages/test/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/config/packages/validator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/config/routes/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/src/Controller/Admin_Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/src/Controller/ArticleController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/src/Controller/CommentsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/src/Controller/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/src/Form/ArticleType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/src/Form/CommentsType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/src/Form/RegistrationType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/src/Form/UserType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/src/Migrations/Version20190404094313.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/src/Migrations/Version20190404140048.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/src/Repository/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/admin/home.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/article/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/article/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/article/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/article/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/article/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/article/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/comments/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/comments/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/comments/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/comments/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/comments/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/comments/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/security/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/security/inscription.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/security/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/user/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/user/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/user/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/user/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/user/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skeleton/templates/user/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony4_blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony4_blog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skeleton/public/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skeleton/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skeleton/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skeleton/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skeleton/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/src/Controller/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skeleton/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skeleton/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/src/Controller/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton/src/Entity/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/src/Entity/Comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skeleton/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skeleton/templates/article/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/templates/article/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skeleton/templates/blog/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/templates/blog/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton/templates/blog/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/templates/blog/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skeleton/templates/user/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/templates/user/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skeleton/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton/templates/user/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,96 +27,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skeleton/src/Controller/BlogController.php">
+        <entry file="file://$PROJECT_DIR$/skeleton/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1620">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-              <folding>
-                <element signature="e#36#59#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skeleton/templates/blog/createArticle.html.twig">
+        <entry file="file://$PROJECT_DIR$/skeleton/templates/blog/home.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skeleton/src/Controller/ArticleController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-612">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/skeleton/src/Form/ArticleType.php">
+        <entry file="file://$PROJECT_DIR$/skeleton/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skeleton/templates/blog/show.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skeleton/templates/comments/_delete_form.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skeleton/src/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1671">
-              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-              <folding>
-                <element signature="e#30#78#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skeleton/templates/article/edit.html.twig">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skeleton/src/Controller/Admin_Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-              <folding>
-                <element signature="e#36#101#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skeleton/templates/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="34">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -184,11 +76,8 @@
       <list>
         <option value="$PROJECT_DIR$/skeleton/templates/blog/index.html.twig" />
         <option value="$PROJECT_DIR$/skeleton/.env" />
-        <option value="$PROJECT_DIR$/skeleton/templates/blog/home.html.twig" />
         <option value="$PROJECT_DIR$/skeleton/templates/blog/create.html.twig" />
-        <option value="$PROJECT_DIR$/skeleton/public/css/style.css" />
         <option value="$PROJECT_DIR$/skeleton/templates/blog/createArticle.html.twig" />
-        <option value="$PROJECT_DIR$/skeleton/src/Entity/Comments.php" />
         <option value="$PROJECT_DIR$/skeleton/templates/security/inscription.html.twig" />
         <option value="$PROJECT_DIR$/skeleton/src/Form/RegistrationType.php" />
         <option value="$PROJECT_DIR$/skeleton/templates/security/login.html.twig" />
@@ -199,9 +88,19 @@
         <option value="$PROJECT_DIR$/skeleton/src/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/skeleton/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/skeleton/src/Entity/User.php" />
-        <option value="$PROJECT_DIR$/skeleton/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/skeleton/templates/blog/show.html.twig" />
+        <option value="$PROJECT_DIR$/skeleton/src/Controller/ArticleController.php" />
+        <option value="$PROJECT_DIR$/skeleton/src/Controller/CommentsController.php" />
+        <option value="$PROJECT_DIR$/skeleton/templates/user/index.html.twig" />
+        <option value="$PROJECT_DIR$/skeleton/src/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/skeleton/src/Form/UserType.php" />
+        <option value="$PROJECT_DIR$/skeleton/templates/user/edit.html.twig" />
+        <option value="$PROJECT_DIR$/skeleton/src/Entity/Comments.php" />
         <option value="$PROJECT_DIR$/skeleton/src/Controller/BlogController.php" />
+        <option value="$PROJECT_DIR$/skeleton/templates/blog/show.html.twig" />
+        <option value="$PROJECT_DIR$/skeleton/templates/article/index.html.twig" />
+        <option value="$PROJECT_DIR$/skeleton/templates/blog/home.html.twig" />
+        <option value="$PROJECT_DIR$/skeleton/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/skeleton/public/css/style.css" />
       </list>
     </option>
   </component>
@@ -282,9 +181,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -330,47 +229,13 @@
               <item name="symfony4_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="symfony4_blog" type="462c0819:PsiDirectoryNode" />
               <item name="skeleton" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfony4_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony4_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="skeleton" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfony4_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony4_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="skeleton" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfony4_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony4_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="skeleton" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfony4_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony4_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="skeleton" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="symfony4_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="symfony4_blog" type="462c0819:PsiDirectoryNode" />
               <item name="skeleton" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfony4_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony4_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="skeleton" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="article" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="symfony4_blog" type="b2602c69:ProjectViewProjectNode" />
@@ -378,13 +243,6 @@
               <item name="skeleton" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfony4_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony4_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="skeleton" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="comments" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -395,10 +253,16 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/skeleton/public/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cyriak\PhpstormProjects\symfony4_blog\skeleton\public\css" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -427,7 +291,8 @@
       <workItem from="1554392239514" duration="6517000" />
       <workItem from="1554406386994" duration="62000" />
       <workItem from="1554408703549" duration="3998000" />
-      <workItem from="1554470882845" duration="4783000" />
+      <workItem from="1554470882845" duration="4819000" />
+      <workItem from="1554478689639" duration="13590000" />
     </task>
     <task id="LOCAL-00001" summary="commit initial">
       <created>1554306173964</created>
@@ -450,20 +315,27 @@
       <option name="project" value="LOCAL" />
       <updated>1554326408138</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="manque l'edit">
+      <created>1554476062824</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554476062824</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64663000" />
+    <option name="totallyTimeSpent" value="78289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22281879" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20067114" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32808024" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32719547" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -487,7 +359,8 @@
     <MESSAGE value="commit initial" />
     <MESSAGE value="ajout des commentaires aux articles" />
     <MESSAGE value="tentative de push commentaire aux articles" />
-    <option name="LAST_COMMIT_MESSAGE" value="tentative de push commentaire aux articles" />
+    <MESSAGE value="manque l'edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="manque l'edit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/skeleton/src/Kernel.php">
@@ -501,13 +374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -557,20 +423,6 @@
     <entry file="file://$PROJECT_DIR$/skeleton/config/packages/dev/web_profiler.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/src/Repository/ArticleRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/src/Entity/Comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skeleton/src/Repository/UserRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -595,6 +447,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/config/routes.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/templates/article/_delete_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/templates/article/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/templates/comments/_delete_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/templates/blog/createArticle.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/src/Entity/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="e#30#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/templates/user/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/skeleton/src/Form/RegistrationType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -605,12 +497,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/src/Controller/SecurityController.php">
+    <entry file="file://$PROJECT_DIR$/skeleton/src/Form/ArticleType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="102">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/src/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/src/Controller/Admin_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
           <folding>
-            <element signature="e#34#54#0#PHP" expanded="true" />
+            <element signature="e#36#101#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -622,70 +528,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/config/routes.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/src/Entity/Article.php">
+    <entry file="file://$PROJECT_DIR$/skeleton/src/Form/UserType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="221">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/templates/user/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/src/Form/CommentsType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/src/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="e#30#78#0#PHP" expanded="true" />
+            <element signature="e#34#54#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/templates/article/_delete_form.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/templates/blog/home.html.twig">
+    <entry file="file://$PROJECT_DIR$/skeleton/src/Controller/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="-793">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="e#34#57#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/templates/blog/createArticle.html.twig">
+    <entry file="file://$PROJECT_DIR$/skeleton/src/Controller/CommentsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        <state relative-caret-position="-589">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="e#34#58#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/templates/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/skeleton/src/Entity/Comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="544">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/src/Repository/ArticleRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skeleton/src/Controller/BlogController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1620">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="369">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
           <folding>
             <element signature="e#36#59#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/templates/blog/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/templates/comments/_delete_form.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skeleton/src/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1671">
+        <state relative-caret-position="306">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding>
             <element signature="e#30#78#0#PHP" expanded="true" />
@@ -693,30 +613,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/templates/article/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/src/Controller/Admin_Controller.php">
+    <entry file="file://$PROJECT_DIR$/skeleton/templates/blog/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding>
-            <element signature="e#36#101#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="233">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/src/Controller/ArticleController.php">
+    <entry file="file://$PROJECT_DIR$/skeleton/templates/article/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="392">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/src/Form/ArticleType.php">
+    <entry file="file://$PROJECT_DIR$/skeleton/public/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="-663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/templates/blog/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>

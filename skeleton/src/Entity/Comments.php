@@ -55,6 +55,7 @@ class Comments
 
     public function setAuthor(string $author): self
     {
+
         $this->author = $author;
 
         return $this;
