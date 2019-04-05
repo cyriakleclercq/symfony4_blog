@@ -9,7 +9,6 @@ use App\Entity\Comments;
 use App\Repository\ArticleRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
@@ -33,6 +32,8 @@ class BlogController extends AbstractController
         ]);
     }
 
+
+
     /**
      * @Route("/blog/new", name="create")
      * @Route("/blog/{id}/edit", name="edit")
@@ -41,8 +42,9 @@ class BlogController extends AbstractController
 
         if(!$article) {
             $article = new Article();
+            $user = $this->getUser();
+            $user->getId();
         }
-
 
         $form = $this->createFormBuilder($article)
             ->add('title', TextType::class, [
@@ -63,11 +65,10 @@ class BlogController extends AbstractController
 
         if($form->isSubmitted() && $form->isValid()) {
 
-            if(!$article) {
 
                 $article->setDate(new \DateTime());
+                $article->setUser($user);
 
-            }
 
             $manager->persist($article);
             $manager->flush();
@@ -93,6 +94,9 @@ class BlogController extends AbstractController
 
         $article = $repo->find($id);
 
+        $user = $this->getUser();
+        $user->getId();
+
         $comment = new Comments();
 
         $form = $this->createFormBuilder($comment)
@@ -108,12 +112,6 @@ class BlogController extends AbstractController
                     'class' => "inp_commentaire"
                 ]
             ])
-            ->add('article', NumberType::class, [
-                'attr'=>[
-                    'value'=>$id
-                ]
-
-            ])
             ->getForm();
 
         $form->handleRequest($request);
@@ -122,12 +120,14 @@ class BlogController extends AbstractController
 
 
             $comment->setDate(new \DateTime());
+            $comment-> setArticle($article);
+            $comment->setUser($user);
 
 
             $manager->persist($comment);
             $manager->flush();
 
-            return $this->redirectToRoute('blog/show.html.twig', [
+            return $this->redirectToRoute('show', [
                 'id' => $comment->getId()
             ]);
         }

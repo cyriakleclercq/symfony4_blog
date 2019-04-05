@@ -10,7 +10,21 @@
         <div id="nav">
 
             <a href="{{ path('home') }}"> home </a>
+
+            {% if is_granted('ROLE_ADMIN') %}
+
             <a href="{{ path('create') }}"> create</a>
+
+            {% endif %}
+
+
+            <a href="{{ path('inscription') }}"> inscription</a>
+
+            {% if not app.user %}
+            <a href="{{ path('login') }}"> connexion </a>
+            {% else %}
+            <a href="{{ path('logout') }}"> déconnexion </a>
+            {% endif %}
 
         </div>
     </header>

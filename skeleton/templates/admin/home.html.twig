@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <header>
+
+        <h1> {{ title }} </h1>
+
+
+
+    </header>
+
+    {% for article in articles %}
+
+        <article>
+
+            <h2> {{ article.title }}</h2>
+
+            <div class="article"> {{ article.content }} </div>
+
+            <div class="article_date"> {{ article.date|date('d/m/y') }} à {{ article.date|date('h:i') }}</div>
+
+            <a href="{{ path('show',{'id':article.id}) }}"> voir les commentaires </a>
+        </article>
+
+    {% endfor %}
+
+
+{%  endblock %}

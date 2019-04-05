@@ -17,6 +17,11 @@
 
             <div class="article_date"> {{ article.date|date('d/m/y') }} à {{ article.date|date('h:i') }}</div>
 
+            {% if is_granted('ROLE_ADMIN') %}
+
+            <a href="{{ path('article_delete',{'id':article.id}) }}"> delete </a>
+
+            {% endif %}
 
 
         </article>
@@ -37,9 +42,19 @@
 
             </div>
 
+                {% if is_granted('ROLE_ADMIN') %}
+
+
+                <a href="{{ path('comments_delete',{'id':article.id}) }}"> delete </a>
+
+                {% endif %}
+
             {% endfor %}
 
         </section>
+
+    {% if app.user %}
+    <section>
 
     {{ form_start(formComment) }}
 
@@ -53,19 +68,16 @@
         {{ form_widget(formComment.content) }}
     </div>
 
-    <div >
-        <label for""> id </label>
-        {{ form_widget(formComment.article) }}
-    </div>
-
 
     <button type="submit" id="bt_comment"> publier </button>
 
     {{ form_end(formComment) }}
 
+    </section>
+
+{% endif %}
 
     <a href="{{ path('home')}}"> voir tout les articles </a>
-
 
 
 
