@@ -9,58 +9,44 @@
     <body>
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="nav">
-            <h2 class="navbar-brand">Mon blog</h2>
+        <div id="hamburger-menu">
 
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav mr-auto">
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{ path('home') }}">Home <span class="sr-only">(current)</span></a>
-                    </li>
-
-                    {% if is_granted('ROLE_ADMIN') %}
+                            <a class="nav-link" href="{{ path('home') }}">Home <span class="sr-only">(current)</span></a>
 
 
-                        <li class="nav-item active">
+                        {% if is_granted('ROLE_ADMIN') %}
+
+
                             <a class="nav-link" href="{{ path('create') }}">Create <span class="sr-only">(current)</span></a>
-                        </li>
 
-                        <li class="nav-item active">
                             <a class="nav-link" href="{{ path('user_index') }}">All users <span class="sr-only">(current)</span></a>
-                        </li>
 
-                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('comments_index') }}">All comments <span class="sr-only"> (current) </span> </a>
+
                             <a class="nav-link" href="{{ path('article_index') }}">All articles <span class="sr-only">(current)</span></a>
-                        </li>
 
-                    {% endif %}
+                        {% endif %}
 
-                    {% if not app.user %}
+                        {% if not app.user %}
 
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ path('inscription') }}"> Registration <span class="sr-only">(current)</span></a>
-                        </li>
+                                <a class="nav-link" href="{{ path('inscription') }}"> Registration <span class="sr-only">(current)</span></a>
 
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ path('login') }}"> Login <span class="sr-only">(current)</span></a>
-                        </li>
+                                <a class="nav-link" href="{{ path('login') }}"> Login <span class="sr-only">(current)</span></a>
 
 
-                    {% else %}
+                        {% else %}
 
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ path('logout') }}"> Logout <span class="sr-only">(current)</span></a>
-                        </li>
+                                <a class="nav-link" href="{{ path('logout') }}"> Logout <span class="sr-only">(current)</span></a>
 
 
-                    {% endif %}
+                        {% endif %}
 
-                </ul>
+                    </ul>
 
-            </div>
-        </nav>
+                </div>
+            </nav>
 
+        </div>
 
     </header>
 

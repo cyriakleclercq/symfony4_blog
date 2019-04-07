@@ -2,17 +2,17 @@
 
 {% block body %}
 
-    <h1> Create Article</h1>
+    <h1> Edit Article</h1>
 
 
-    <div class="form">
+    <div>
         {{ form_start(formArticle) }}
 
         <div>
             <label for""> Titre </label>
             {{ form_widget(formArticle.title) }}
 
-            <div>
+            <div id="edit_article">
                 <label for""> Content </label>
                 {{ form_widget(formArticle.content) }}
             </div>
@@ -22,14 +22,14 @@
         <button type="submit" class="form-group">
             {% if editMode  %}
 
-                Modifier
+            Modifier
 
             {% else %}
 
-            Créer un article </button>
+            Editer un article </button>
 
         {% endif
-            %}
+        %}
 
         {{ form_end(formArticle) }}
     </div>

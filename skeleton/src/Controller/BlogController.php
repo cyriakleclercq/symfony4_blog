@@ -13,6 +13,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class BlogController extends AbstractController
@@ -29,7 +30,7 @@ class BlogController extends AbstractController
         $article = $repo->findAll();
 
         return $this->render('blog/home.html.twig', [
-            'title' => 'Bienvenue dans ce Blog', 'articles' => $article
+            'title' => 'Welcome in this blog', 'articles' => $article
         ]);
     }
 
@@ -94,9 +95,6 @@ class BlogController extends AbstractController
 
         $article = $repo->find($id);
 
-        $connection = new User();
-
-
             $user = $this->getUser();
             $user->getId();
 
@@ -132,8 +130,8 @@ class BlogController extends AbstractController
             $manager->persist($comment);
             $manager->flush();
 
-            return $this->redirectToRoute('show', [
-                'id' => $comment->getId()
+            return $this->redirectToRoute('home', [
+                'id' => $comment->getId(),
             ]);
         }
 
@@ -146,4 +144,44 @@ class BlogController extends AbstractController
         }
 
 
+    /**
+     * @Route("/blog/{id}/edit", name="edit_article")
+     */
+    public function editArticle(Article $article, Request $request,ObjectManager $manager) {
+
+
+            $user = $this->getUser();
+            $user->getId();
+
+        $form = $this->createFormBuilder($article)
+            ->add('title', TextType::class, [
+                'attr'=> [
+                    'class' => "edit_title"
+                ]
+            ])
+            ->add('content',TextareaType::class, [
+                'attr' => [
+                    'class' => "edit_article"
+                ]
+            ])
+            ->getForm();
+
+        $form-> handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()) {
+
+            $article->setUser($user);
+            $manager->persist($article);
+            $manager->flush();
+
+            return $this->redirectToRoute('home',[
+                'id'=> $article->getId(),
+            ]);
+        }
+
+        return $this->render('blog/edit.html.twig',[
+            'formArticle'=> $form->createView(),
+            'editMode' => $article->getId() !== null
+        ]);
+    }
 }

@@ -1,4 +1,75 @@
-#header_home {
-    margin-bottom: 2%;
+
+h1 {
+    font-weight: bold;
+    background: #28a1c5;
+    color: ghostwhite;
+    margin: 3% !important;
     text-align: center;
+}
+
+#commentaire {
+    margin-top: 5%;
+    clear: both;
+}
+
+.comment {
+    margin: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    clear: both;
+}
+
+.comment_author {
+    margin-bottom: 1%;
+}
+
+.comment_content {
+    border: solid;
+    padding: 1%;
+}
+
+.supr {
+    float: right;
+}
+
+input {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+}
+
+.form {
+    margin-left: 30%;
+    margin-right: 30%;
+    border: solid;
+    padding: 2%;
+}
+
+#formulaire_commentaire> h2 {
+    text-align: center;
+}
+
+.article {
+    padding: 2%;
+}
+
+#hamburger-menu {
+    width: 100%;
+    background: #28a1c5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#hamburger-menu > a {
+    width: auto;
+    padding: 1%;
+    color: ghostwhite;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form_content {
+    height: 200px;
 }

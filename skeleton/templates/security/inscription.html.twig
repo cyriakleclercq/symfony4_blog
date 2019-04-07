@@ -2,12 +2,17 @@
 
 {% block body %}
 
-    <h1> inscription </h1>
+
+        <h1 style="text-align: center; margin-bottom: 10% "> Registration </h1>
+
+    <div class="form">
 
     {{ form_start(form) }}
-    {{ form_widget(form) }}
+        {{ form_widget(form) }}
 
-    <button type="submit" id="bt_inscription"> valider </button>
+        <button type="submit" style="margin-top: 2%" class="form-group"> valider </button>
 
-    {{ form_end(form) }}
+        {{ form_end(form) }}
+
+    </div>
 {% endblock %}
