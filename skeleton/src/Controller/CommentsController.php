@@ -15,6 +15,8 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class CommentsController extends AbstractController
 {
+
+    // affiche toutes les infos commentaire
     /**
      * @Route("/", name="comments_index", methods={"GET"})
      */
@@ -25,6 +27,7 @@ class CommentsController extends AbstractController
         ]);
     }
 
+    // ajout un nouveau commentaire
     /**
      * @Route("/new", name="comments_new", methods={"GET","POST"})
      */
@@ -48,6 +51,8 @@ class CommentsController extends AbstractController
         ]);
     }
 
+    // affihce tout les commentaires
+
     /**
      * @Route("/{id}", name="comments_show", methods={"GET"})
      */
@@ -57,6 +62,8 @@ class CommentsController extends AbstractController
             'comment' => $comment,
         ]);
     }
+
+    //permet à l'utilisateur d'edit les commentaires
 
     /**
      * @Route("/{id}/edit", name="comments_edit", methods={"GET","POST"})
@@ -80,6 +87,7 @@ class CommentsController extends AbstractController
         ]);
     }
 
+    // permet à l'utilisateur de supprimer un commentaire
     /**
      * @Route("/{id}", name="comments_delete", methods={"DELETE"})
      */

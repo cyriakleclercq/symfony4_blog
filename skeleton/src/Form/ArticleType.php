@@ -12,6 +12,9 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class ArticleType extends AbstractType
 {
+
+    // formulaire auto-généré pour les articles
+
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder

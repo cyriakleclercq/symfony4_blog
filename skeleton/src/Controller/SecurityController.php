@@ -12,6 +12,9 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class SecurityController extends AbstractController
 {
+
+    // permet a l'utilisateur de se créer un compte
+
     /**
      * @Route("/inscription", name="inscription")
      */
@@ -43,6 +46,7 @@ class SecurityController extends AbstractController
         ]);
     }
 
+    // permet à l'utilisateur de connecter
     /**
      * @Route("/login", name="login")
      */
@@ -50,6 +54,8 @@ class SecurityController extends AbstractController
     public function login() {
         return $this->render('security/login.html.twig');
     }
+
+    // permet à l'utilisteur de se déconnecter
 
     /**
      * @Route("/logout", name="logout")

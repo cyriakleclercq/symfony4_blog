@@ -11,6 +11,8 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class CommentsType extends AbstractType
 {
+    // formulaire auto-généré pour les commentaires
+
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder

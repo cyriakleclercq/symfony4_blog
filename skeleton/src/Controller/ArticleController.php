@@ -15,6 +15,8 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class ArticleController extends AbstractController
 {
+
+    // affiche toutes les infos liées aux articles
     /**
      * @Route("/", name="article_index", methods={"GET"})
      */
@@ -24,6 +26,8 @@ class ArticleController extends AbstractController
             'articles' => $articleRepository->findAll(),
         ]);
     }
+
+    // non utilisé, sert à créer un nouvel article
 
     /**
      * @Route("/new", name="article_new", methods={"GET","POST"})
@@ -48,6 +52,7 @@ class ArticleController extends AbstractController
         ]);
     }
 
+    // affiche tous les articles
     /**
      * @Route("/{id}", name="article_show", methods={"GET"})
      */
@@ -58,6 +63,7 @@ class ArticleController extends AbstractController
         ]);
     }
 
+    // édit l'article désiré
     /**
      * @Route("/{id}/edit", name="article_edit", methods={"GET","POST"})
      */
@@ -79,6 +85,8 @@ class ArticleController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
+
+    // delete l'article désiré
 
     /**
      * @Route("/{id}", name="article_delete", methods={"DELETE"})

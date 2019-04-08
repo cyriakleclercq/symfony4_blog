@@ -11,6 +11,8 @@ use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 class UserType extends AbstractType
 {
+    // formulaire auto-généré pour l'edit des utilisateurs
+
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder

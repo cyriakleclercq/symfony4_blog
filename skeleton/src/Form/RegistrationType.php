@@ -11,6 +11,8 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class RegistrationType extends AbstractType
 {
+    // formulaire auto-généré pour les inscriptions
+
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder

@@ -19,6 +19,9 @@ class UserController extends AbstractController
     /**
      * @Route("/", name="user_index", methods={"GET"})
      */
+
+    // affiche a l'admin toutes les infos utilisateur
+
     public function index(UserRepository $userRepository): Response
     {
         return $this->render('user/index.html.twig', [
@@ -29,6 +32,9 @@ class UserController extends AbstractController
     /**
      * @Route("/new", name="user_new", methods={"GET","POST"})
      */
+
+    // créer un nouvel utilisateur
+
     public function new(Request $request): Response
     {
         $user = new User();
@@ -49,6 +55,8 @@ class UserController extends AbstractController
         ]);
     }
 
+    //affiche l'utilisateur désiré
+
     /**
      * @Route("/{id}", name="user_show", methods={"GET"})
      */
@@ -58,6 +66,8 @@ class UserController extends AbstractController
             'user' => $user,
         ]);
     }
+
+    // permet d'éditer un utilisateur
 
     /**
      * @Route("/{id}/edit", name="user_edit", methods={"GET","POST"})
@@ -84,6 +94,8 @@ class UserController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
+
+    // permet de supprimer un utilisateur
 
     /**
      * @Route("/{id}", name="user_delete", methods={"DELETE"})

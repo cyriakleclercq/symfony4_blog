@@ -6,18 +6,18 @@ namespace App\Controller;
 
 use App\Entity\Article;
 use App\Entity\Comments;
-use App\Entity\User;
 use App\Repository\ArticleRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class BlogController extends AbstractController
 {
+
+    // page d'accueil, affiche tous les articles
 
     /**
      * @Route("/", name="home")
@@ -34,18 +34,22 @@ class BlogController extends AbstractController
         ]);
     }
 
-
+// créer son article, dédié a l'admin
 
     /**
      * @Route("/blog/new", name="create")
      */
     public function form(Article $article = null, Request $request,ObjectManager $manager) {
 
+        // vérifie l'absence d'article
+
         if(!$article) {
             $article = new Article();
             $user = $this->getUser();
             $user->getId();
         }
+
+        // crée le formulaire
 
         $form = $this->createFormBuilder($article)
             ->add('title', TextType::class, [
@@ -66,6 +70,7 @@ class BlogController extends AbstractController
 
         if($form->isSubmitted() && $form->isValid()) {
 
+// une fois soumis, récupère la date et l'id user
 
                 $article->setDate(new \DateTime());
                 $article->setUser($user);
@@ -85,6 +90,7 @@ class BlogController extends AbstractController
         ]);
     }
 
+    // affiche tous l'article et ses commentaires
 
     /**
      * @Route("/blog/show/{id}", name="show")
@@ -99,6 +105,7 @@ class BlogController extends AbstractController
             $user->getId();
 
 
+// formulaire pour créer un nouveau commentaire pour cet article
 
         $comment = new Comments();
 
@@ -121,6 +128,7 @@ class BlogController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
 
+// zjout auto de la date et de l'id article
 
             $comment->setDate(new \DateTime());
             $comment-> setArticle($article);
@@ -143,6 +151,7 @@ class BlogController extends AbstractController
 
         }
 
+        // permet à l'admin de modifier ses articles
 
     /**
      * @Route("/blog/{id}/edit", name="edit_article")
