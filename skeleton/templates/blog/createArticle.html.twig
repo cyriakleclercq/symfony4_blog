@@ -2,6 +2,8 @@
 
 {% block body %}
 
+    {% if is_granted('ROLE_ADMIN') %}
+
     <h1> Create Article</h1>
 
 
@@ -33,5 +35,7 @@
 
         {{ form_end(formArticle) }}
     </div>
+
+    {% endif %}
 
 {% endblock %}

@@ -3,6 +3,9 @@
 {% block title %}Comments index{% endblock %}
 
 {% block body %}
+
+    {% if is_granted('ROLE_ADMIN') %}
+
     <h1>Comments index</h1>
 
     <table class="table">
@@ -33,5 +36,7 @@
         {% endfor %}
         </tbody>
     </table>
+
+    {% endif %}
 
 {% endblock %}

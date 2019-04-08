@@ -1,5 +1,8 @@
 {% extends 'base.html.twig' %}
 
+    {% if is_granted('ROLE_ADMIN') %}
+
+
 {% block title %}New Comments{% endblock %}
 
 {% block body %}
@@ -8,4 +11,7 @@
     {{ include('comments/_form.html.twig') }}
 
     <a href="{{ path('comments_index') }}">back to list</a>
+
+    {% endif %}
+
 {% endblock %}

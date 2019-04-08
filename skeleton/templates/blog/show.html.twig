@@ -2,90 +2,95 @@
 
 {% block body %}
 
-    <header>
-
-        <h1> Your article </h1>
-
-    </header>
+    {% if app.user %}
 
 
-        <article class="article">
+        <header>
 
-            <h2> {{ article.title }}</h2>
+            <h1> Your article </h1>
 
-            <div class="article"> {{ article.content }} </div>
-
-            <div class="article_date"> {{ article.date|date('d/m/y') }} à {{ article.date|date('h:i') }}</div>
-
-            {% if is_granted('ROLE_ADMIN') %}
-
-            <a class="supr" href="{{ path('article_delete',{'id':article.id}) }}"> delete </a>
-
-            {% endif %}
+        </header>
 
 
-        </article>
+            <article class="article">
 
-        <section id="commentaire">
+                <h2> {{ article.title }}</h2>
 
-            {%  for comment in article.comments %}
-            <div class="comment">
+                <div class="article"> {{ article.content }} </div>
 
-                <div class="comment_author"> {{ comment.author }} </div>
+                <div class="article_date"> {{ article.date|date('d/m/y') }} à {{ article.date|date('h:i') }}</div>
 
-                <div class="comment_content">
-                <div> {{ comment.content}} </div>
+                {% if is_granted('ROLE_ADMIN') %}
 
-                <div class="comment_date"> {{ comment.date|date('d/m/y') }} à {{ comment.date|date('h:i') }} </div>
+                <a class="supr" href="{{ path('article_delete',{'id':article.id}) }}"> delete </a>
 
-                    {% if is_granted('ROLE_ADMIN') %}
+                {% endif %}
 
 
-                        <a class="supr" href="{{ path('comments_delete',{'id':comment.id}) }}"> delete </a>
+            </article>
 
-                        <div style="clear: both "></div>
+            <section id="commentaire">
 
-                    {% endif %}
+                {%  for comment in article.comments %}
+                <div class="comment">
+
+                    <div class="comment_author"> {{ comment.author }} </div>
+
+                    <div class="comment_content">
+                    <div> {{ comment.content}} </div>
+
+                    <div class="comment_date"> {{ comment.date|date('d/m/y') }} à {{ comment.date|date('h:i') }} </div>
+
+                        {% if is_granted('ROLE_ADMIN') %}
+
+
+                            <a class="supr" href="{{ path('comments_delete',{'id':comment.id}) }}"> delete </a>
+
+                            <div style="clear: both "></div>
+
+                        {% endif %}
+
+                    </div>
+
+
 
                 </div>
 
 
 
+                {% endfor %}
+
+            </section>
+
+            {% if app.user %}
+            <section>
+
+            {{ form_start(formComment) }}
+
+                <div class="form">
+
+                    <h2> comment ! </h2>
+                <div class="div_author">
+                    <label for""> auteur </label>
+                    {{ form_widget(formComment.author) }}
+                </div>
+
+            <div class="div_comment">
+                <label for""> commentaire </label>
+                {{ form_widget(formComment.content) }}
             </div>
 
 
+            <button type="submit" id="bt_comment"> publier </button>
 
-            {% endfor %}
+                </div>
+            {{ form_end(formComment) }}
 
-        </section>
+            </section>
 
-    {% if app.user %}
-    <section>
+        {% endif %}
 
-    {{ form_start(formComment) }}
-
-        <div class="form">
-
-            <h2> comment ! </h2>
-        <div class="div_author">
-            <label for""> auteur </label>
-            {{ form_widget(formComment.author) }}
-        </div>
-
-    <div class="div_comment">
-        <label for""> commentaire </label>
-        {{ form_widget(formComment.content) }}
-    </div>
-
-
-    <button type="submit" id="bt_comment"> publier </button>
-
-        </div>
-    {{ form_end(formComment) }}
-
-    </section>
-
-{% endif %}
+    {% endif %}
 
 
 {%  endblock %}
